@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+body {
+  color: $white;
+  font-family: "Koulen";
+  background-color: black;
+}
