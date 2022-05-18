@@ -9,6 +9,9 @@
   place-items: center;
   padding: 2em;
   padding-left: 3.5em;
+  li {
+    position: relative;
+  }
 }
 
 .nav-btn {
@@ -19,14 +22,45 @@
   display: grid;
   place-items: center;
   margin-bottom: 2em;
+  cursor: pointer;
+
   svg {
     font-size: 1.5rem;
   }
+  transition: box-shadow 1 ease-in;
+  transition: 0.25s ease-in-out 0s;
+  &:hover,
+  &:focus {
+    background-color: $neon-red;
+
+    box-shadow: 0 0 2px $neon-red, 0 0 4px $neon-red, 0 0 6px $neon-red,
+      0 0 20px $neon-red, 0 0 20px $neon-red, 0 0 30px $neon-red,
+      0 0 10px $neon-red, 0 0 30px $neon-red;
+  }
+  &:hover + .nav-btn-text,
+  &:focus + .nav-btn-text {
+    display: block;
+  }
 }
 .nav-btn-text {
+  width: 5em;
+  position: absolute;
   display: none;
+  top: 25%;
+  right: -200%;
+  animation: moveToRight 0.5s ease-in;
+  font-size: 1.5rem;
 }
-
+@keyframes moveToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 .logo {
   position: absolute;
   top: 2em;
