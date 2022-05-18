@@ -1,0 +1,28 @@
+@use "../abstracts/" as *;
+@use "../utils/" as *;
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $black;
+  height: 4em;
+  padding: 1em;
+}
+@include breakpoint("medium") {
+  .mobile-header {
+    display: none;
+  }
+}
+.mobile-logo {
+  font-size: 1.5rem;
+  letter-spacing: 0.2em;
+}
+
+.hamburger-icon,.close-icon {
+  width: 1.8em;
+  height: 1.8em;
+}

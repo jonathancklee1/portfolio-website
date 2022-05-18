@@ -1,5 +1,4 @@
 body {
-  font-family: "Inter", sans-serif;
 }
 h1,
 h2,
@@ -10,6 +9,11 @@ p,
 a {
 }
 h1 {
+  font-size: 3rem;
 }
 h3 {
+}
+button,
+li {
+  font-family: inherit;
 }

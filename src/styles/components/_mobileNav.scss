@@ -1,0 +1,40 @@
+@use "../abstracts/" as *;
+.mobile-nav-container {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $background-clr;
+  height: 100vh;
+  width: 85vw;
+  z-index: 99;
+  padding: 2em;
+  font-size: 1.4rem;
+  transition: transform 0.4s ease-in;
+  transform: translateX(100%);
+  li {
+    margin-bottom: 2em;
+  }
+}
+.mobile-nav-container.open {
+  transform: translateX(0%);
+}
+.mobile-nav-btn-text {
+  margin-left: 1em;
+}
+.mobile-nav-btn svg {
+  width: 2em;
+}
+.mobile-nav-btn-text,
+.mobile-nav-btn {
+  display: inline-block;
+}
+.close-nav-btn {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  width: 1.5em;
+  height: 1.5em;
+}
