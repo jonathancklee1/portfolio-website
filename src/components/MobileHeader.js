@@ -21,14 +21,14 @@ export default function MobileHeader() {
       <h1 className="mobile-logo">&lt;JCKL&gt;</h1>
       {navOpen ? (
         <FontAwesomeIcon
-          className="hamburger-icon"
-          icon={faBars}
+          className="close-icon"
+          icon={faTimes}
           onClick={toggleNav}
         />
       ) : (
         <FontAwesomeIcon
-          className="close-icon"
-          icon={faTimes}
+          className="hamburger-icon"
+          icon={faBars}
           onClick={toggleNav}
         />
       )}

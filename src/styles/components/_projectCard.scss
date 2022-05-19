@@ -1,0 +1,41 @@
+@use "../abstracts/" as *;
+
+.project-card--outer {
+  clip-path: $truncated-corner;
+  height: calc(30em);
+  width: calc(100%);
+  background-color: $neon-red;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 25em;
+  display: grid;
+  place-items: center;
+  margin-bottom: 3em;
+}
+.project-card--inner {
+  clip-path: $truncated-corner;
+  //   border: 5px solid $neon-red;
+  height: 97%;
+  width: 97%;
+  display: flex;
+  margin: auto;
+  padding: 1em 0 4em 0;
+  position: relative;
+
+  background-color: black;
+}
+.project-btn {
+  padding: 1em 0.3em;
+  width: 45%;
+  color: $white;
+  background-color: $neon-red;
+  font-size: 1rem;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto 0.8em 0 0.8em;
+
+  width: 100%;
+}
