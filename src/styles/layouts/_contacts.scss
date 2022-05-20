@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+@use "../utils/" as *;
+
+.contact-section {
+  margin: 0 auto;
+  max-width: 46em;
+  h2 {
+    margin-bottom: 0.5em;
+  }
+}
+.socials-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  width: 100%;
+  max-width: 6em;
+  margin-bottom: 0.5em;
+}

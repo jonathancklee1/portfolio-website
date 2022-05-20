@@ -1,7 +1,10 @@
 h1,
 h2,
-h3 {
+h3,
+h4,
+p {
   margin-top: 0;
+  letter-spacing: 2px;
 }
 
 h1 {
@@ -12,7 +15,9 @@ h2 {
 }
 a,
 button,
-li {
+li,
+input,
+textarea {
   text-decoration: none;
   font-family: inherit;
 }

@@ -15,3 +15,8 @@
     font-size: 1.1rem;
   }
 }
+@include breakpoint("large") {
+  .skill-tab p {
+    font-size: 1.3rem;
+  }
+}

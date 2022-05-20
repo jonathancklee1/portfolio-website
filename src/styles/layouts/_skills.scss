@@ -32,7 +32,7 @@
   width: 100%;
   h2 {
     text-align: center;
-    margin-bottom: 1.4em;
+    margin-bottom: 1em;
   }
 }
 .cert-card-wrapper {
@@ -40,12 +40,30 @@
   flex-wrap: wrap;
   gap: 2em;
   width: 100%;
-
   margin: 0 auto;
+  margin-bottom: 3em;
 }
 @include breakpoint("medium") {
   .cert-card-wrapper {
-    max-width:80%;
+    max-width: 80%;
+  }
+  .skill-card-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+  }
+  .skills-container {
+    width: 100%;
+    max-width: 75%;
+  }
+}
+@include breakpoint("large") {
+  .skill-card h3 {
+    font-size: 1.5rem;
+  }
+  .cert-card-wrapper {
+    max-width: 80%;
   }
   .skill-card-wrapper {
     width: 100%;

@@ -1,14 +1,16 @@
 @use "../abstracts/" as *;
+@use "../utils/" as *;
 
 .cert-card {
   padding: 1.5em;
+
   border: 3px solid $dark-purple;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   width: 100%;
-  max-width: 18em;
-  height: 12.5em;
+  max-width: 21em;
+  height: 14em;
 }
 .cert-img {
   max-width: 6em;
@@ -19,9 +21,30 @@
   flex-direction: column;
   width: 200px;
 }
+.cert-issuer,
+.cert-issue-date {
+  font-size: 0.7rem;
+}
 .cred-btn {
   color: $white;
-  padding: 0.5em;
+  padding: 0.3em;
   background-color: $neon-pink;
   margin-top: auto;
+  transition: 0.4s;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
+@include breakpoint("medium") {
+  .cert-info {
+    font-size: 1.1rem;
+  }
+  .cred-btn {
+    font-size: 1.1rem;
+  }
+  .cert-issuer,
+  .cert-issue-date {
+    font-size: 0.9rem;
+  }
 }
