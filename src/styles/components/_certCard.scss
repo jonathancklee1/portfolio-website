@@ -1,0 +1,27 @@
+@use "../abstracts/" as *;
+
+.cert-card {
+  padding: 1.5em;
+  border: 3px solid $dark-purple;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 18em;
+  height: 12.5em;
+}
+.cert-img {
+  max-width: 6em;
+  height: 3em;
+}
+.cert-info {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.cred-btn {
+  color: $white;
+  padding: 0.5em;
+  background-color: $neon-pink;
+  margin-top: auto;
+}

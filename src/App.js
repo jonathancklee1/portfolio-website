@@ -3,6 +3,7 @@ import SideNav from "./components/SideNav";
 import MobileHeader from "./components/MobileHeader";
 import ProjectCard from "./components/ProjectCard";
 import SkillTab from "./components/SkillTab";
+import CertCard from "./components/CertCard";
 
 function App() {
   const devSkillArray = [
@@ -16,11 +17,42 @@ function App() {
     "sql",
   ];
   const miscSkillArray = ["agile scrum", "figma", "ms suite", "sas"];
+  const certArray = [
+    {
+      certName: "Career Accelerator: Essentials",
+      issuer: "UNSW Business School",
+      issueDate: "Jan 2022",
+      credLink: "",
+    },
+    {
+      certName: "SAS: Business Analytics",
+      issuer: "UNSW Business School",
+      issueDate: "Jan 2022",
+      credLink: "",
+    },
+    {
+      certName: "Microsoft Excel",
+      issuer: "Microsoft",
+      issueDate: "Dec 2021",
+      credLink: "",
+    },
+  ];
   const devSkillComponents = devSkillArray.map((skill) => {
     return <SkillTab key={skill} skill={skill} />;
   });
   const miscSkillComponents = miscSkillArray.map((skill) => {
     return <SkillTab key={skill} skill={skill} />;
+  });
+  const certCardComponents = certArray.map((cert) => {
+    return (
+      <CertCard
+        key={cert}
+        certName={cert.certName}
+        issuer={cert.issuer}
+        issueDate={cert.issueDate}
+        credLink={cert.credLink}
+      />
+    );
   });
   return (
     <div className="App">
@@ -62,11 +94,7 @@ function App() {
           </section>
           <section className="cert-container">
             <h2>Certification</h2>
-            <div className="cert-card-wrapper">
-              <div className="cert-card"></div>
-              <div className="cert-card"></div>
-              <div className="cert-card"></div>
-            </div>
+            <div className="cert-card-wrapper">{certCardComponents}</div>
           </section>
         </section>
       </main>
