@@ -8,9 +8,14 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-
+}
+.about-me-text-wrapper {
+  margin-bottom: 5em;
 }
 .resume-btn {
+  font-size: 1.4rem;
   display: block;
+  color: $white;
+  border: 3px solid $dark-purple;
+  padding: 0.3em 1.2em;
 }

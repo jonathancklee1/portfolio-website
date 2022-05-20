@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+.skill-tab {
+  padding: 0.8em;
+  border: 3px solid $dark-purple;
+  width: 47%;
+  p {
+    text-align: center;
+    color: $white;
+  }
+}

@@ -1,10 +1,26 @@
+@use "../utils/" as *;
 .projects-container {
   width: 100%;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  gap: 1em;
 }
-.projects-section {
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5em;
+.projects-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5em;
+}
+@include breakpoint("medium") {
+  .projects-container {
+    flex-direction: row;
+    max-width: 70%;
+    // grid-template-columns: repeat(2, 1fr);
+  }
+}
+@include breakpoint("large") {
+  .projects-container {
+    // grid-template-columns: repeat(3, 1fr);
   }
 }

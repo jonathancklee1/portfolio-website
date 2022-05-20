@@ -3,6 +3,7 @@
 
 .side-nav {
   display: none;
+  z-index: 99;
 }
 
 @include breakpoint("medium") {
@@ -15,12 +16,18 @@
     display: grid;
     place-items: center;
     padding: 2em;
-    padding-left: 3.5em;
+    // padding-left: 3.5em;
     li {
       position: relative;
     }
   }
 }
+@include breakpoint("large") {
+  .side-nav {
+    padding-left: 3.5em;
+  }
+}
+
 .nav-btn {
   width: 4.6875em;
   height: 4.6875em;

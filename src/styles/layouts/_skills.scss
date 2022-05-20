@@ -1,0 +1,43 @@
+@use "../abstracts/" as *;
+@use "../utils/" as *;
+.skill-card {
+  border: 3px solid $dark-purple;
+  padding: 1.5em;
+  width: 100%;
+  margin-bottom: 3em;
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1em;
+  }
+}
+.skills-container {
+  width: 100%;
+  max-width: 700px;
+  h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+}
+.skill-tab-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.6em;
+}
+
+.skills-section {
+  background-color: rgb(14, 14, 53);
+}
+
+@include breakpoint("medium") {
+  .skill-card-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+  }
+  .skills-container {
+    width: 100%;
+    max-width: 75%;
+  }
+}
