@@ -13,8 +13,8 @@
 
 .project-card--outer {
   clip-path: $truncated-corner;
-  height: 30em;
-  width: 100%;
+  height: 27em;
+  width: 90%;
   background-color: $neon-red;
   display: grid;
   place-items: center;
@@ -34,12 +34,15 @@
   padding: 1em 0 4em 0;
   position: relative;
   background-color: black;
+  &:hover .project-overview {
+    transform: translateY(0%);
+  }
 }
 .project-btn {
-  padding: 1em 0.3em;
+  padding: 0.5em;
   width: 45%;
   color: $white;
-  font-size: 1rem;
+  font-size: 1.1rem;
   background-color: $neon-red;
   transition: transform 0.3s ease;
   &:hover,
@@ -54,4 +57,28 @@
   align-items: center;
   margin: auto 0.8em 0 0.8em;
   width: 100%;
+}
+
+.project-overview {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(165, 6, 6, 0.658);
+  padding: 2em;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in;
+
+  .project-skills {
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid rgb(8, 222, 250);
+    margin-bottom: 1em;
+    span:not(:last-child) {
+      margin-right: 0.4em;
+    }
+  }
+  .project-description {
+    word-wrap: break-word;
+  }
 }

@@ -1,5 +1,6 @@
 @use "../abstracts/" as *;
-
+@use "../utils/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
 li.half {
   width: 49%;
   float: left;
@@ -20,12 +21,16 @@ li.half {
 }
 input,
 textarea {
+  font-family: "Prompt", sans-serif;
   width: 100%;
   padding: 0.5em;
   background-color: $input-clr;
   font-size: 1.1rem;
   height: 3em;
   color: $white;
+}
+.submit-btn {
+  font-family: inherit;
 }
 textarea {
   height: calc(3em * 3);
@@ -34,4 +39,22 @@ input[type="text"],
 input[type="email"] {
   font-size: 1.1rem;
   height: 3em;
+}
+@include breakpoint("medium") {
+  .submit-btn {
+    width: 10em;
+    transition: transform 0.4s ease-in-out;
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+  .contact-form {
+    max-width: 80%;
+  }
+}
+@include breakpoint("large") {
+  .contact-form {
+    max-width: 100%;
+  }
 }

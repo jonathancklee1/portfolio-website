@@ -9,6 +9,18 @@ export default function ProjectCard() {
             <button className="project-btn">Github</button>
             <button className="project-btn">Live Site</button>
           </div>
+          <div className="project-overview">
+            <div className="project-skills">
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <div className="project-description">
+              <p>
+                loremloremloremloremloremloremloremloremloremloremlorem lorem
+                lorem lorem
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <h2>Project Name</h2>
