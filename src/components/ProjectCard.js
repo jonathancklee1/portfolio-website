@@ -10,20 +10,21 @@ export default function ProjectCard() {
             <button className="project-btn">Live Site</button>
           </div>
           <div className="project-overview">
+            <div className="project-show-more-arrow"></div>
             <div className="project-skills">
               <span>HTML</span>
               <span>CSS</span>
             </div>
             <div className="project-description">
               <p>
-                loremloremloremloremloremloremloremloremloremloremlorem lorem
+                lorem lorem loremlorem lorem loremlo remlor emlo remlo remlorem lorem
                 lorem lorem
               </p>
             </div>
           </div>
         </div>
       </div>
-      <h2>Project Name</h2>
+      <h4>Project Name</h4>
     </div>
   );
 }

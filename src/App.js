@@ -10,16 +10,21 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   const devSkillArray = [
-    "html5",
-    "css3",
-    "javascript",
-    "react",
-    "sass",
-    "java",
-    "git/github",
-    "sql",
+    { skill: "html5", iconPath: "html.png" },
+    { skill: "css3", iconPath: "css.png" },
+    { skill: "javascript", iconPath: "js.png" },
+    { skill: "react", iconPath: "react.png" },
+    { skill: "sass", iconPath: "sass.png" },
+    { skill: "java", iconPath: "java.png" },
+    { skill: "github", iconPath: "github.png" },
+    { skill: "sql", iconPath: "sql.png" },
   ];
-  const miscSkillArray = ["agile scrum", "figma", "ms suite", "sas"];
+  const miscSkillArray = [
+    { skill: "agile scrum", iconPath: "agile.png" },
+    { skill: "figma", iconPath: "figma.png" },
+    { skill: "sas", iconPath: "sas.png" },
+    { skill: "ms suite", iconPath: "ms.png" },
+  ];
   const certArray = [
     {
       certName: "Career Accelerator: Essentials",
@@ -40,11 +45,11 @@ function App() {
       credLink: "",
     },
   ];
-  const devSkillComponents = devSkillArray.map((skill) => {
-    return <SkillTab key={skill} skill={skill} />;
+  const devSkillComponents = devSkillArray.map((skillArray) => {
+    return <SkillTab key={skillArray.skill} skillArray={skillArray} />;
   });
-  const miscSkillComponents = miscSkillArray.map((skill) => {
-    return <SkillTab key={skill} skill={skill} />;
+  const miscSkillComponents = miscSkillArray.map((skillArray) => {
+    return <SkillTab key={skillArray.skill} skillArray={skillArray} />;
   });
   const certCardComponents = certArray.map((cert) => {
     return (
@@ -72,6 +77,7 @@ function App() {
         </section>
         <section className="section projects-section">
           <h2>Projects</h2>
+          <h3>Here are some projects I have created.</h3>
           <div className="projects-container">
             <ProjectCard />
             <ProjectCard />
