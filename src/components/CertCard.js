@@ -10,7 +10,7 @@ export default function CertCard(props) {
     <div className="cert-card">
       <img
         className="cert-img"
-        src="../assets/img/about-me-cover.JPG"
+        src={require(`../assets/img/${props.certImgPath}`)}
         alt="certification image"
       ></img>
       <div className="cert-info">

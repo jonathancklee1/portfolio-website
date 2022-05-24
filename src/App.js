@@ -29,20 +29,26 @@ function App() {
     {
       certName: "Career Accelerator: Essentials",
       issuer: "UNSW Business School",
-      issueDate: "Jan 2022",
-      credLink: "",
+      issueDate: "Feb 2022",
+      credLink:
+        "https://www.credly.com/badges/b99c5484-1168-415a-89d3-61edcec19aa9",
+      certImgPath: "ca-cert.png",
     },
     {
       certName: "SAS: Business Analytics",
       issuer: "UNSW Business School",
       issueDate: "Jan 2022",
-      credLink: "",
+      credLink:
+        "https://www.credly.com/badges/e86ced93-3c85-4255-833b-af6fc1ee1f48",
+      certImgPath: "sas-cert.png",
     },
     {
       certName: "Microsoft Excel",
       issuer: "Microsoft",
       issueDate: "Dec 2021",
-      credLink: "",
+      credLink:
+        "https://www.credly.com/badges/4d1b42ff-a73c-40e9-86e8-6a27aec09ccf",
+      certImgPath: "excel-cert.png",
     },
   ];
   const devSkillComponents = devSkillArray.map((skillArray) => {
@@ -59,6 +65,7 @@ function App() {
         issuer={cert.issuer}
         issueDate={cert.issueDate}
         credLink={cert.credLink}
+        certImgPath={cert.certImgPath}
       />
     );
   });
@@ -67,13 +74,100 @@ function App() {
       <SideNav />
       <MobileHeader />
       <main>
-        <section className="section about-me-section">
-          <div className="about-me-text-wrapper">
+        <section className="section home-section">
+          <div className="home-text-wrapper">
             <h1>Hi, I'm Jonathan Lee</h1>
             <h2>Information Systems Graduate</h2>
             <p>Welcome to my portfolio website!</p>
           </div>
           <button className="resume-btn">Download Resume</button>
+        </section>
+
+        <section className="section about-me-section">
+          <h2>Profile</h2>
+          <p className="profile-blurb">
+            Technology has always surrounded me growing up whether it be
+            exploring cool websites on an old home computer or receiving my
+            first Nintendo console. It was through my studies when I realised
+            the expansive nature of the internet and found myself exploring web
+            development.
+          </p>
+          <div className="profile-card">
+            <img
+              src={require("./assets/img/stat-bars.png")}
+              className="stat-bar-img"
+            ></img>
+            <div className="profile-content">
+              <h4 className="border-bottom-green">Stats</h4>
+              <p>
+                Name: <span>Jonathan Lee</span>
+              </p>
+              <p>
+                Location: <span>Sydney</span>
+              </p>
+              <p>
+                Languages: <span>English, Cantonese</span>
+              </p>
+              <p>
+                Part-time Job: <span>Academic tutor</span>
+              </p>
+              <p>
+                Favourite TV-show: <span>The Haunting of Hill House</span>
+              </p>
+              <p>
+                Favourite Band: <span>Gunship</span>
+              </p>
+              <p>
+                Fun Facts:{" "}
+                <span>
+                  Learnt how to play guitar and chess over the pandemic, nearly
+                  died on a ski trip.
+                </span>
+              </p>
+            </div>
+          </div>
+          <h2>Education</h2>
+          <div className="education-wrapper">
+            <div>
+              <h4>Bachelor of Information Systems</h4>
+              <p>February 2019 - May 2022</p>
+              <p>University of New South Wales (UNSW)</p>
+            </div>
+            <div>
+              <h4>Relevant Coursework</h4>
+              <ul>
+                <li>
+                  <p>
+                    <span className="green"> {">"} </span> Business Programming
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span className="green"> {">"} </span>Mobile Application
+                    Development
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span className="green"> {">"} </span>Networking {"&"} Cyber
+                    Security
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span className="green"> {">"} </span>Database Management{" "}
+                    {"&"} Big Data Infrastructures
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span className="green"> {">"} </span>Information Systems
+                    Innovation {"&"} Transformation
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
         <section className="section projects-section">
           <h2>Projects</h2>

@@ -7,6 +7,7 @@ import {
   faEnvelope,
   faTimes,
   faBars,
+  faHome,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function MobileHeader() {
@@ -39,6 +40,12 @@ export default function MobileHeader() {
       >
         <nav className="mobile-nav">
           <ul>
+            <li onClick={() => setNavOpen(false)}>
+              <div className="mobile-nav-btn">
+                <FontAwesomeIcon icon={faHome} color="#fff" />
+              </div>
+              <p className="mobile-nav-btn-text">Home</p>
+            </li>
             <li onClick={() => setNavOpen(false)}>
               <div className="mobile-nav-btn">
                 <FontAwesomeIcon icon={faUser} color="#fff" />

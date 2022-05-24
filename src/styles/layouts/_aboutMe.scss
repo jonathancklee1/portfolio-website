@@ -1,28 +1,58 @@
-@use "../abstracts" as *;
-.about-me-section {
-  height: 100vh;
-  background-image: linear-gradient(
-      (0deg, $linear-gradient-1, $linear-gradient-2)
-    ),
-    url(../../assets/img/about-me-cover.JPG);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+@use "../abstracts/" as *;
+@use "../utils/" as *;
+
+.education-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  h4 {
+    font-size: 1.2rem;
+  }
+  ul {
+    margin-left: 1em;
+  }
 }
-.about-me-text-wrapper {
-  margin-bottom: 5em;
+.profile-blurb {
+  margin-bottom: 4em;
+  text-align: center;
+  max-width: 55em;
 }
-.resume-btn {
-  font-size: 1.4rem;
-  display: block;
-  color: $white;
-  border: 5px solid $dark-purple;
-  padding: 0.3em 1.2em;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  &:hover {
-    // background-color: $dark-purple;
-    color: $dark-purple;
-    box-shadow: inset 0 0 1em 0.2em $dark-purple, 0 0 1em 0.2em $dark-purple;
+.profile-card {
+  border: 3px solid green;
+  padding: 2em;
+  margin-bottom: 3em;
+  box-shadow: 0 0 1em 0 $neon-green;
+  border-radius: 5px;
+  max-width: 30em;
+  p {
+    color: $neon-green;
+    span {
+      color: $white;
+    }
+  }
+}
+.border-bottom-green {
+  border-bottom: 3px solid $neon-green;
+  margin-bottom: 1em;
+}
+.stat-bar-img {
+  max-width: 9em;
+}
+.profile-content {
+  //   background-color: $neon-green;
+}
+.green {
+  color: $neon-green;
+}
+@include breakpoint("medium") {
+  .education-wrapper {
+    flex-direction: row;
+    div {
+      width: 49%;
+    }
+  }
+  .about-me-section {
+    max-width: 70%;
+    margin: 0 auto;
   }
 }
