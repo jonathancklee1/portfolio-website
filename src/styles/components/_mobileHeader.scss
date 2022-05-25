@@ -8,9 +8,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: $black;
+  background-color: $background-clr;
   height: 4em;
-  padding: 1em;
+  padding: 1em 2em 1em 2em;
   z-index: 99;
 }
 @include breakpoint("medium") {
@@ -23,7 +23,8 @@
   letter-spacing: 0.2em;
 }
 
-.hamburger-icon,.close-icon {
+.hamburger-icon,
+.close-icon {
   width: 1.8em;
   height: 1.8em;
 }

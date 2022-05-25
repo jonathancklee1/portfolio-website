@@ -45,6 +45,8 @@ input[type="email"] {
   .submit-btn {
     width: 10em;
     transition: transform 0.4s ease-in-out;
+    margin-left: auto;
+    float: right;
     &:hover,
     &:focus {
       transform: scale(1.1);

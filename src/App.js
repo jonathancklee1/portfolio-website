@@ -7,6 +7,7 @@ import CertCard from "./components/CertCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Typical from "react-typical";
 
 function App() {
   const devSkillArray = [
@@ -69,28 +70,41 @@ function App() {
       />
     );
   });
+
   return (
     <div className="App">
       <SideNav />
       <MobileHeader />
       <main>
-        <section className="section home-section">
+        <section className="section home-section" id="homeSection">
           <div className="home-text-wrapper">
-            <h1>Hi, I'm Jonathan Lee</h1>
-            <h2>Information Systems Graduate</h2>
+            <h1>
+              Hi, I'm <span className="name-text">Jonathan</span>
+            </h1>
+            <Typical
+              steps={[
+                "Information Systems Graduate",
+                3000,
+                "Aspiring Front-end Web Developer",
+                3000,
+              ]}
+              loop={Infinity}
+              wrapper="h2"
+            />
+            {/* <h2>Information Systems Graduate</h2> */}
             <p>Welcome to my portfolio website!</p>
           </div>
           <button className="resume-btn">Download Resume</button>
         </section>
 
-        <section className="section about-me-section">
+        <section className="section about-me-section" id="aboutSection">
           <h2>Profile</h2>
           <p className="profile-blurb">
             Technology has always surrounded me growing up whether it be
-            exploring cool websites on an old home computer or receiving my
-            first Nintendo console. It was through my studies when I realised
-            the expansive nature of the internet and found myself exploring web
-            development.
+            exploring cool websites on my old home computer or receiving my
+            first Nintendo console for my birthday. It was through my studies
+            when I discovered the expansive nature of the internet and found
+            myself exploring web development.
           </p>
           <div className="profile-card">
             <img
@@ -169,9 +183,12 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="section projects-section">
+        <section className="section projects-section" id="projectSection">
           <h2>Projects</h2>
-          <h3>Here are some projects I have created.</h3>
+          <h3>
+            Here are some projects I have created along my web development
+            journey.
+          </h3>
           <div className="projects-container">
             <ProjectCard />
             <ProjectCard />
@@ -181,7 +198,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section skills-section">
+        <section className="section skills-section" id="skillsSection">
           <section className="skills-container">
             <h2>Skills</h2>
             <div className="skill-card-wrapper">
@@ -201,7 +218,7 @@ function App() {
           </section>
         </section>
 
-        <section className="section contact-section">
+        <section className="section contact-section" id="contactSection">
           <h2>Contact Me</h2>
           <div className="socials-container">
             <FontAwesomeIcon icon={faGithub} />

@@ -7,7 +7,7 @@ import {
   faEnvelope,
   faHome,
 } from "@fortawesome/free-solid-svg-icons";
-
+import { Link } from "react-scroll";
 export default function SideNav() {
   return (
     <nav className="side-nav">
@@ -15,33 +15,58 @@ export default function SideNav() {
         <h1 className="logo">&lt;JCKL&gt;</h1>
         <ul>
           <li>
-            <div className="nav-btn">
+            <Link
+              className="nav-btn"
+              to="homeSection"
+              smooth={true}
+              duration={700}
+            >
               <FontAwesomeIcon icon={faHome} color="#fff" />
-            </div>
+            </Link>
             <p className="nav-btn-text">Home</p>
           </li>
           <li>
-            <div className="nav-btn">
+            <Link
+              className="nav-btn"
+              to="aboutSection"
+              smooth={true}
+              duration={700}
+            >
               <FontAwesomeIcon icon={faUser} color="#fff" />
-            </div>
+            </Link>
             <p className="nav-btn-text">About Me</p>
           </li>
           <li>
-            <div className="nav-btn">
+            <Link
+              className="nav-btn"
+              to="projectSection"
+              smooth={true}
+              duration={700}
+            >
               <FontAwesomeIcon icon={faLaptop} color="#fff" />
-            </div>
+            </Link>
             <p className="nav-btn-text">Projects</p>
           </li>
           <li>
-            <div className="nav-btn">
+            <Link
+              className="nav-btn"
+              to="skillsSection"
+              smooth={true}
+              duration={700}
+            >
               <FontAwesomeIcon icon={faScrewdriverWrench} color="#fff" />
-            </div>
+            </Link>
             <p className="nav-btn-text">Skills</p>
           </li>
           <li>
-            <div className="nav-btn">
+            <Link
+              className="nav-btn"
+              to="contactSection"
+              smooth={true}
+              duration={700}
+            >
               <FontAwesomeIcon icon={faEnvelope} color="#fff" />
-            </div>
+            </Link>
             <p className="nav-btn-text">Contact Me</p>
           </li>
         </ul>

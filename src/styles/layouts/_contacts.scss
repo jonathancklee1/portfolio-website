@@ -3,7 +3,7 @@
 
 .contact-section {
   margin: 0 auto;
-  max-width: 45em;
+  max-width: 50em;
   h2 {
     margin-bottom: 0.5em;
   }
@@ -27,6 +27,6 @@
 }
 @include breakpoint("large") {
   .contact-section {
-    max-width: 55em;
+    max-width: 60em;
   }
 }

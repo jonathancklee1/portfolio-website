@@ -1,3 +1,4 @@
+@use "../utils/" as *;
 .section {
   height: 100%;
   display: flex;
@@ -6,5 +7,10 @@
   flex-direction: column;
   padding: 2em;
   padding-top: 5em;
+}
 
+@include breakpoint("large") {
+  .section {
+    padding-bottom: 8em;
+  }
 }
