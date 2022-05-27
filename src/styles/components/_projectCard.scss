@@ -24,9 +24,10 @@
 .project-card--inner {
   clip-path: $truncated-corner;
   //   border: 5px solid $neon-red;
-  background-image: url(../../assets/img/about-me-cover.JPG);
+  background-image: url(../../assets/img/tenzies-sc.png);
+  // object-fit: cover;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   height: 97%;
   width: 97%;
@@ -50,6 +51,13 @@
     transform: scale(1.07);
     background-color: $neon-red;
   }
+}
+.tech-tag {
+  border: 2px solid $black;
+  padding: 0.3em 0.6em;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  color: $white;
 }
 .button-wrapper {
   display: flex;
@@ -86,7 +94,7 @@
     }
   }
   .project-skills {
-    padding-bottom: 0.5em;
+    padding-bottom: 0.8em;
     border-bottom: 2px solid rgb(8, 222, 250);
     margin-bottom: 1em;
     span:not(:last-child) {
