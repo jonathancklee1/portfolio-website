@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function AboutSection() {
   return (
@@ -12,37 +12,39 @@ export default function AboutSection() {
         development.
       </p>
       <div className="profile-card">
-        <img
-          src={require("../assets/img/stat-bars.png")}
-          className="stat-bar-img"
-        ></img>
-        <div className="profile-content">
-          <h4 className="border-bottom-green">Stats</h4>
-          <p>
-            Name: <span>Jonathan Lee</span>
-          </p>
-          <p>
-            Location: <span>Sydney</span>
-          </p>
-          <p>
-            Languages: <span>English, Cantonese</span>
-          </p>
-          <p>
-            Part-time Job: <span>Academic tutor</span>
-          </p>
-          <p>
-            Favourite TV-show: <span>The Haunting of Hill House</span>
-          </p>
-          <p>
-            Favourite Band: <span>Gunship</span>
-          </p>
-          <p>
-            Fun Facts:{" "}
-            <span>
-              Learnt how to play guitar and chess over the pandemic, nearly died
-              on a ski trip.
-            </span>
-          </p>
+        <div className="profile-content-wrapper">
+          <img
+            src={require("../assets/img/stat-bars.png")}
+            className="stat-bar-img"
+          ></img>
+          <div className="profile-content">
+            <h4 className="border-bottom-green">Stats</h4>
+            <p>
+              Name: <span>Jonathan Lee</span>
+            </p>
+            <p>
+              Location: <span>Sydney</span>
+            </p>
+            <p>
+              Languages: <span>English, Cantonese</span>
+            </p>
+            <p>
+              Part-time Job: <span>Academic tutor</span>
+            </p>
+            <p>
+              Favourite TV-show: <span>The Haunting of Hill House</span>
+            </p>
+            <p>
+              Favourite Band: <span>Gunship</span>
+            </p>
+            <p>
+              Fun Facts:{" "}
+              <span>
+                Learnt how to play guitar and chess over the pandemic, had a
+                scary experience on a ski trip.
+              </span>
+            </p>
+          </div>
         </div>
       </div>
       <h2>Education</h2>

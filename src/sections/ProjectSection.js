@@ -15,7 +15,7 @@ const projectArray = [
     projectName: "Weather and Study Companion",
     techStack: ["HTML", "CSS", "Javascript", "API"],
     projectDesc:
-      "A combination of a weather app and a pomodoro timer for study to improve productivity. This project allowed me to use the fundamental skills I have learnt so far into one application",
+      "A combination of a weather app and a pomodoro timer to improve productivity. This project allowed me to use the fundamental skills I have learnt so far into one application",
     githubLink: "https://github.com/jonathancklee1/weather-app",
     liveSiteLink: "https://confident-tesla-4709ee.netlify.app/",
     projectImgPath: "weather-comp-sc.png",
@@ -41,11 +41,12 @@ const projectArray = [
   {
     projectName: "Covid-19 Screening App",
     techStack: ["Java", "XML", "Firebase"],
-    projectDesc: "Dec 2021",
+    projectDesc:
+      "A group project from my Information Systems capstone course. Managed the role of UI/UX designer and front-end developer for this project. A business-oriented COVID-19 screening application, utilising a collection of technologies such as XML, Firebase and Java packages.",
     githubLink:
       "https://www.credly.com/badges/4d1b42ff-a73c-40e9-86e8-6a27aec09ccf",
     liveSiteLink: "excel-cert.png",
-    projectImgPath: "ca-cert.png",
+    projectImgPath: "covid-screening-sc.png",
   },
 ];
 
@@ -56,7 +57,8 @@ const projectComponents = projectArray.map((projectArray) => {
       projectName={projectArray.projectName}
       techStack={projectArray.techStack}
       projectDesc={projectArray.projectDesc}
-      credLink={projectArray.credLink}
+      githubLink={projectArray.githubLink}
+      liveSiteLink={projectArray.liveSiteLink}
       projectImgPath={projectArray.projectImgPath}
     />
   );

@@ -1,5 +1,16 @@
 @use "../abstracts/" as *;
 @use "../utils/" as *;
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
 
 .education-wrapper {
   display: flex;
@@ -18,14 +29,14 @@
   max-width: 55em;
 }
 .profile-card {
-  border: 3px solid green;
+  // border: 3px solid green;
   padding: 2em;
   margin-bottom: 5em;
-  box-shadow: 0 0 1em 0 $neon-green;
+  // box-shadow: 0 0 1em 0 $neon-green;
   border-radius: 5px;
   max-width: 30em;
   background-color: $black;
-
+  position: relative;
   p {
     color: $neon-green;
     margin-bottom: 0.8em;
@@ -33,7 +44,37 @@
       color: $white;
     }
   }
+  // overflow: hidden;
+
+  &::before {
+    content: "";
+    width: 102%;
+    height: 102%;
+    position: absolute;
+    top: -1%;
+    left: -1%;
+    background: $neon-green;
+    box-shadow: 0 0 2.5em 0.3em $neon-green;
+    border-radius: 10px;
+    z-index: -2;
+    animation: pulse 4s linear infinite;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 96%;
+    height: 96%;
+    top: 2%;
+    left: 2%;
+    background: black;
+    border-radius: 10px;
+    z-index: -1;
+  }
 }
+.project-content-wrapper {
+  z-index: 99;
+}
+
 .border-bottom-green {
   border-bottom: 3px solid $neon-green;
   margin-bottom: 1em;
@@ -43,6 +84,7 @@
 }
 .profile-content {
   //   background-color: $neon-green;
+  z-index: 99;
 }
 .green {
   color: $neon-green;

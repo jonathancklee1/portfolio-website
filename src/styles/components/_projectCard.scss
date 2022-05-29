@@ -44,16 +44,20 @@
   width: 45%;
   color: $white;
   font-size: 1.1rem;
-  background-color: $neon-red;
+  // background-color: $neon-red;
+  border: 3px solid $neon-red;
+  color: $neon-red;
   transition: transform 0.3s ease;
+  margin-bottom: 1em;
   &:hover,
   &:focus {
     transform: scale(1.07);
     background-color: $neon-red;
+    color: $white;
   }
 }
 .tech-tag {
-  border: 2px solid $black;
+  border: 2px solid $white;
   padding: 0.3em 0.6em;
   border-radius: 10px;
   font-size: 0.8rem;
@@ -102,6 +106,7 @@
     }
   }
   .project-description {
+    font-size: 0.8rem;
     word-wrap: break-word;
   }
 }
