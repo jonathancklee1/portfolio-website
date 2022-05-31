@@ -1,8 +1,10 @@
 @use "../abstracts/" as *;
+@use "../utils/" as *;
 .project-card {
   margin-bottom: 3em;
-  max-width: 23em;
-  width: 100%;
+  width: 30em;
+  // height: 30em;
+  // width: 100%;
   display: grid;
   margin: 0 auto;
   place-items: center;
@@ -11,7 +13,10 @@
     text-align: center;
   }
 }
-
+.project-img {
+  width: 100%;
+  object-fit: cover;
+}
 .project-card--outer {
   clip-path: $truncated-corner;
   height: 27em;
@@ -23,21 +28,14 @@
 }
 .project-card--inner {
   clip-path: $truncated-corner;
-  //   border: 5px solid $neon-red;
-  background-image: url(../../assets/img/tenzies-sc.png);
-  // object-fit: cover;
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
   height: 97%;
   width: 97%;
   display: flex;
   margin: auto;
   padding: 1em 0 4em 0;
   box-shadow: 0 0 1em 0 $neon-red;
-
+  background-color: rgb(240, 57, 57);
   position: relative;
-  background-color: black;
 }
 .project-btn {
   padding: 0.5em;
@@ -108,5 +106,10 @@
   .project-description {
     font-size: 0.8rem;
     word-wrap: break-word;
+  }
+}
+@include breakpoint("medium") {
+  .project-card {
+    // width: 46%;
   }
 }

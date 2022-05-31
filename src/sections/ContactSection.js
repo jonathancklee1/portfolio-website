@@ -24,14 +24,31 @@ export default function ContactSection() {
         }
       );
   }
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
 
+    if (newWindow) newWindow.opener = null;
+  };
   return (
     <section className="section contact-section" id="contactSection">
       <h2>Contact Me</h2>
       <div className="socials-container">
-        <FontAwesomeIcon icon={faGithub} />
-        <FontAwesomeIcon icon={faLinkedin} />
-        <FontAwesomeIcon icon={faEnvelope} />
+        <FontAwesomeIcon
+          icon={faGithub}
+          onClick={() => openInNewTab("https://github.com/jonathancklee1")}
+        />
+        <FontAwesomeIcon
+          icon={faLinkedin}
+          onClick={() =>
+            openInNewTab("https://www.linkedin.com/in/jonathan-lee-97bbb9207/")
+          }
+        />
+        <FontAwesomeIcon
+          icon={faEnvelope}
+          onClick={() =>
+            openInNewTab("mailto:jonathancklee@gmail.com?subject=Subject")
+          }
+        />
       </div>
       <div className="contact-form">
         <label>Please feel free to contact me through this form! </label>

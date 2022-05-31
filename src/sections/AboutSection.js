@@ -13,10 +13,17 @@ export default function AboutSection() {
       </p>
       <div className="profile-card">
         <div className="profile-content-wrapper">
-          <img
-            src={require("../assets/img/stat-bars.png")}
-            className="stat-bar-img"
-          ></img>
+          <div className="img-wrapper">
+            <img
+              src={require("../assets/img/stat-bars.png")}
+              className="stat-bar-img"
+            ></img>
+            <img
+              src={require("../assets/img/pixel-me.gif")}
+              className="character-img"
+            ></img>
+          </div>
+
           <div className="profile-content">
             <h4 className="border-bottom-green">Stats</h4>
             <p>
@@ -33,9 +40,6 @@ export default function AboutSection() {
             </p>
             <p>
               Favourite TV-show: <span>The Haunting of Hill House</span>
-            </p>
-            <p>
-              Favourite Band: <span>Gunship</span>
             </p>
             <p>
               Fun Facts:{" "}

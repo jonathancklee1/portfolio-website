@@ -37,6 +37,7 @@
   max-width: 30em;
   background-color: $black;
   position: relative;
+  transition: all 1s ease;
   p {
     color: $neon-green;
     margin-bottom: 0.8em;
@@ -54,7 +55,7 @@
     top: -1%;
     left: -1%;
     background: $neon-green;
-    box-shadow: 0 0 2.5em 0.3em $neon-green;
+
     border-radius: 10px;
     z-index: -2;
     animation: pulse 4s linear infinite;
@@ -66,9 +67,12 @@
     height: 96%;
     top: 2%;
     left: 2%;
-    background: black;
+    background: $black;
     border-radius: 10px;
     z-index: -1;
+  }
+  &:hover {
+    box-shadow: 0 0 2.5em 0.3em $neon-green;
   }
 }
 .project-content-wrapper {
@@ -79,13 +83,30 @@
   border-bottom: 3px solid $neon-green;
   margin-bottom: 1em;
 }
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  border: 3px solid $neon-green;
+  position: relative;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  padding: 1em;
+  background: linear-gradient($green, $black);
+}
 .stat-bar-img {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  object-fit: contain;
   max-width: 9em;
 }
-.profile-content {
-  //   background-color: $neon-green;
-  z-index: 99;
+.character-img {
+  max-width: 12em;
+  height: 17em;
+  object-fit: contain;
+  margin-top: 3em;
 }
+
 .green {
   color: $neon-green;
 }

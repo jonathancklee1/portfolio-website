@@ -19,10 +19,14 @@ export default function ProjectCard(props) {
       <div className="project-card--outer">
         <div
           className="project-card--inner"
-          style={{
-            backgroundImage: `url(${require(`../assets/img/${props.projectImgPath}`)})`,
-          }}
+          // style={{
+          //   backgroundImage: `url(${require(`../assets/img/${props.projectImgPath}`)})`,
+          // }}
         >
+          <img
+            className="project-img"
+            src={require(`../assets/img/${props.projectImgPath}`)}
+          ></img>
           <div className="project-overview">
             <div className="project-show-more-arrow"></div>
             <div className="project-skills">{techItems}</div>
