@@ -43,9 +43,7 @@ const projectArray = [
     techStack: ["Java", "XML", "Firebase"],
     projectDesc:
       "A group project from my Information Systems capstone course. Managed the role of UI/UX designer and front-end developer for this project. A business-oriented COVID-19 screening application, utilising a collection of technologies such as XML, Firebase and Java packages.",
-    githubLink:
-      "https://www.credly.com/badges/4d1b42ff-a73c-40e9-86e8-6a27aec09ccf",
-    liveSiteLink: "excel-cert.png",
+
     projectImgPath: "covid-screening-sc.png",
   },
 ];

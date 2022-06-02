@@ -37,18 +37,22 @@ export default function ProjectCard(props) {
         </div>
       </div>
       <div className="button-wrapper">
-        <button
-          className="project-btn"
-          onClick={() => openInNewTab(props.githubLink)}
-        >
-          Github
-        </button>
-        <button
-          className="project-btn"
-          onClick={() => openInNewTab(props.liveSiteLink)}
-        >
-          Live Site
-        </button>
+        {props.githubLink && props.liveSiteLink ? (
+          <>
+            <button
+              className="project-btn"
+              onClick={() => openInNewTab(props.githubLink)}
+            >
+              Github
+            </button>
+            <button
+              className="project-btn"
+              onClick={() => openInNewTab(props.liveSiteLink)}
+            >
+              Live Site
+            </button>
+          </>
+        ) : null}
       </div>
       <h4>{props.projectName}</h4>
     </div>

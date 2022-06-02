@@ -12,7 +12,9 @@ export default function SideNav() {
   return (
     <nav className="side-nav">
       <div>
-        <h1 className="logo">&lt;JCKL&gt;</h1>
+        <Link to="homeSection" smooth={true} duration={700}>
+          <h1 className="logo">&lt;JCKL&gt;</h1>
+        </Link>
         <ul>
           <li>
             <Link

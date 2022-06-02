@@ -1,6 +1,6 @@
 @use "../abstracts/" as *;
 @use "../utils/" as *;
-@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+
 li.half {
   width: 49%;
   float: left;
@@ -21,7 +21,7 @@ li.half {
 }
 input,
 textarea {
-  font-family: "Prompt", sans-serif;
+  font-family: "Kdam Thmor Pro", sans-serif;
   width: 100%;
   padding: 0.5em;
   background-color: $input-clr;

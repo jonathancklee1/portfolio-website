@@ -1,9 +1,8 @@
 @use "../abstracts/" as *;
-@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
 body {
   height: 100vh;
   width: 100%;
   color: $white;
-  font-family: "Koulen";
+  font-family: "Koulen", cursive;
   background-color: $background-clr;
 }
