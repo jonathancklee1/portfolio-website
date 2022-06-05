@@ -17,12 +17,7 @@ export default function ProjectCard(props) {
   return (
     <div className="project-card">
       <div className="project-card--outer">
-        <div
-          className="project-card--inner"
-          // style={{
-          //   backgroundImage: `url(${require(`../assets/img/${props.projectImgPath}`)})`,
-          // }}
-        >
+        <div className="project-card--inner">
           <img
             className="project-img"
             src={require(`../assets/img/${props.projectImgPath}`)}
@@ -52,7 +47,14 @@ export default function ProjectCard(props) {
               Live Site
             </button>
           </>
-        ) : null}
+        ) : (
+          <button
+            className="project-btn"
+            onClick={() => openInNewTab(props.figmaLink)}
+          >
+            Figma
+          </button>
+        )}
       </div>
       <h4>{props.projectName}</h4>
     </div>

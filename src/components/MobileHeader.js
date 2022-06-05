@@ -19,7 +19,9 @@ export default function MobileHeader() {
 
   return (
     <header className="mobile-header">
-      <h1 className="mobile-logo">&lt;JCKL&gt;</h1>
+      <Link to="homeSection" smooth={true} duration={700}>
+        <h1 className="mobile-logo">&lt;JCKL&gt;</h1>
+      </Link>
       {navOpen ? (
         <FontAwesomeIcon
           className="close-icon"
@@ -40,56 +42,61 @@ export default function MobileHeader() {
       >
         <nav className="mobile-nav">
           <ul>
-            <li onClick={() => setNavOpen(false)}>
+            <li>
               <Link
                 className="mobile-nav-btn"
                 to="homeSection"
                 smooth={true}
                 duration={700}
+                onClick={toggleNav}
               >
                 <FontAwesomeIcon icon={faHome} color="#fff" />
                 <p className="mobile-nav-btn-text">Home</p>
               </Link>
             </li>
-            <li onClick={() => setNavOpen(false)}>
+            <li>
               <Link
                 className="mobile-nav-btn"
                 to="aboutSection"
                 smooth={true}
                 duration={700}
+                onClick={toggleNav}
               >
                 <FontAwesomeIcon icon={faUser} color="#fff" />
                 <p className="mobile-nav-btn-text">About Me</p>
               </Link>
             </li>
-            <li onClick={() => setNavOpen(false)}>
+            <li>
               <Link
                 className="mobile-nav-btn"
                 to="projectSection"
                 smooth={true}
                 duration={700}
+                onClick={toggleNav}
               >
                 <FontAwesomeIcon icon={faLaptop} color="#fff" />
                 <p className="mobile-nav-btn-text">Projects</p>
               </Link>
             </li>
-            <li onClick={() => setNavOpen(false)}>
+            <li>
               <Link
                 className="mobile-nav-btn"
                 to="skillsSection"
                 smooth={true}
                 duration={700}
+                onClick={toggleNav}
               >
                 <FontAwesomeIcon icon={faScrewdriverWrench} color="#fff" />
                 <p className="mobile-nav-btn-text">Skills</p>
               </Link>
             </li>
-            <li onClick={() => setNavOpen(false)}>
+            <li>
               <Link
                 className="mobile-nav-btn"
                 to="contactSection"
                 smooth={true}
                 duration={700}
+                onClick={toggleNav}
               >
                 <FontAwesomeIcon icon={faEnvelope} color="#fff" />
                 <p className="mobile-nav-btn-text">Contact Me</p>

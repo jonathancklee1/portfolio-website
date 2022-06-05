@@ -3,13 +3,11 @@
 .project-card {
   margin-bottom: 3em;
   width: 30em;
-  // height: 30em;
-  // width: 100%;
   display: grid;
   margin: 0 auto;
   place-items: center;
-
-  h2 {
+  h2,
+  h4 {
     text-align: center;
   }
 }
@@ -20,7 +18,7 @@
 .project-card--outer {
   clip-path: $truncated-corner;
   height: 27em;
-  width: 90%;
+  width: 100%;
   background-color: $neon-red;
   display: grid;
   place-items: center;
@@ -42,7 +40,6 @@
   width: 45%;
   color: $white;
   font-size: 1.1rem;
-  // background-color: $neon-red;
   border: 3px solid $neon-red;
   color: $neon-red;
   transition: transform 0.3s ease;
@@ -56,10 +53,10 @@
 }
 .tech-tag {
   border: 2px solid $white;
-  padding: 0.3em 0.6em;
+  padding: 0.5em 0.6em;
   border-radius: 10px;
-  font-size: 0.8rem;
   color: $white;
+  font-size: 0.6rem;
 }
 .button-wrapper {
   display: flex;
@@ -75,19 +72,20 @@
   width: 1em;
   height: 1em;
   transform: rotate(135deg);
-  margin: 0 auto 1.5em auto;
+  margin: 0 auto 2.3em auto;
 }
 .project-overview {
   position: absolute;
   font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: 0.6rem;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(165, 6, 6, 0.925);
+  background-color: rgba(109, 9, 9, 0.925);
   padding: 2em;
-  padding-top: 0.9em;
-  transform: translateY(92%);
+  padding-top: 2em;
+  transform: translateY(90%);
   transition: transform 0.4s ease-in;
   cursor: pointer;
   &:hover {
@@ -97,20 +95,29 @@
     }
   }
   .project-skills {
-    padding-bottom: 0.8em;
-    border-bottom: 2px solid rgb(8, 222, 250);
+    padding-bottom: 1.5em;
+    border-bottom: 2px solid rgb(182, 170, 8);
     margin-bottom: 1em;
+
     span:not(:last-child) {
       margin-right: 0.4em;
     }
   }
   .project-description {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     word-wrap: break-word;
   }
 }
 @include breakpoint("medium") {
-  .project-card {
-    // width: 46%;
+  .project-overview {
+    font-size: 1rem;
+    padding-top: 1.5em;
+    transform: translateY(85%);
+  }
+  .project-description p {
+    font-size: 0.9rem;
+  }
+  .tech-tag {
+    font-size: 0.7rem;
   }
 }
