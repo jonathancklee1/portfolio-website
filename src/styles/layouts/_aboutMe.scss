@@ -38,6 +38,7 @@
   background-color: $black;
   position: relative;
   transition: all 1s ease;
+  z-index: 1;
   p {
     color: $neon-green;
     margin-bottom: 0.8em;
@@ -45,7 +46,6 @@
       color: $white;
     }
   }
-  // overflow: hidden;
 
   &::before {
     content: "";
@@ -55,7 +55,6 @@
     top: -1%;
     left: -1%;
     background: $neon-green;
-
     border-radius: 10px;
     z-index: -2;
     animation: pulse 4s linear infinite;
@@ -63,10 +62,10 @@
   &::after {
     content: "";
     position: absolute;
-    width: 96%;
-    height: 96%;
-    top: 2%;
-    left: 2%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     background: $black;
     border-radius: 10px;
     z-index: -1;

@@ -4,5 +4,9 @@ body {
   width: 100%;
   color: $white;
   font-family: "Koulen", cursive;
+
   background-color: $background-clr;
+}
+main {
+  background: url(../../assets/img/falling-triangles.svg) repeat fixed 100%;
 }
