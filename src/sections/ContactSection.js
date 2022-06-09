@@ -51,7 +51,10 @@ export default function ContactSection() {
         />
       </div>
       <div className="contact-form">
-        <label>Please feel free to contact me through this form! </label>
+        <label>
+          Please feel free to contact me through this form or reach out through
+          my socials above!{" "}
+        </label>
         <form ref={refForm} onSubmit={sendEmail}>
           <ul>
             <li className="half">

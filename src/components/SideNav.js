@@ -9,8 +9,28 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 export default function SideNav() {
+  const [navColour, setNavColour] = React.useState("purple");
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY < 600) {
+        setNavColour("dark-purple");
+      } else if (window.scrollY > 600 && window.scrollY < 2400) {
+        setNavColour("green");
+      } else if (window.scrollY > 2400 && window.scrollY < 4200) {
+        setNavColour("red");
+      } else if (window.scrollY > 4200 && window.scrollY < 5600) {
+        setNavColour("pink");
+      } else {
+        setNavColour("light-purple");
+      }
+    });
+    return () => {
+      window.removeEventListener("scroll");
+    };
+  }, []);
   return (
-    <nav className="side-nav">
+    <nav className={`side-nav nav--${navColour}`}>
       <div>
         <Link to="homeSection" smooth={true} duration={700}>
           <h1 className="logo">&lt;JCKL&gt;</h1>

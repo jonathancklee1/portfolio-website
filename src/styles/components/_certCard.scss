@@ -4,14 +4,14 @@
 .cert-card {
   padding: 1.5em;
 
-  border: 3px solid $dark-purple;
+  border: 3px solid $neon-pink;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   width: 100%;
   max-width: 21em;
   height: 14em;
-  box-shadow: inset 0 0 1em 0 $dark-purple, 0 0 1em 0 $dark-purple;
+  box-shadow: inset 0 0 1em 0 $neon-pink, 0 0 1em 0 $neon-pink;
   gap: 0.5em;
 }
 .cert-img {

@@ -10,9 +10,9 @@ export default function HomeSection() {
         <Typical
           steps={[
             "Information Systems Graduate",
-            3000,
-            "Aspiring Front-end Web Developer",
-            3000,
+            4000,
+            "Aspiring Front-end Developer",
+            4000,
           ]}
           loop={Infinity}
           wrapper="h2"

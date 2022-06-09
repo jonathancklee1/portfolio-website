@@ -8,7 +8,6 @@
 
 @include breakpoint("medium") {
   .side-nav {
-    // background-color: $nav-background-clr;
     position: fixed;
     left: 0;
     top: 0;
@@ -16,7 +15,6 @@
     display: grid;
     place-items: center;
     padding: 2em;
-    // padding-left: 3.5em;
     li {
       position: relative;
     }
@@ -32,27 +30,97 @@
   width: 4.6875em;
   height: 4.6875em;
   border-radius: 50%;
-  border: 4px solid $neon-red;
+  border: 4px solid $dark-purple;
   display: grid;
   place-items: center;
   margin-bottom: 2em;
   cursor: pointer;
-  box-shadow: inset 0 0 1em 0em $neon-red, 0 0 1em 0em $neon-red;
+  box-shadow: inset 0 0 1em 0em $dark-purple, 0 0 1em 0em $dark-purple;
   transition: box-shadow 1 ease-in;
   svg {
     font-size: 1.5rem;
   }
-
   &:hover,
   &:focus {
-    background-color: $neon-red;
-    box-shadow: 0 0 2px $neon-red, 0 0 4px $neon-red, 0 0 6px $neon-red,
-      0 0 20px $neon-red, 0 0 20px $neon-red, 0 0 30px $neon-red,
-      0 0 10px $neon-red, 0 0 30px $neon-red;
+    background-color: $dark-purple;
+    box-shadow: 0 0 2px $dark-purple, 0 0 4px $dark-purple, 0 0 6px $dark-purple,
+      0 0 20px $dark-purple, 0 0 20px $dark-purple, 0 0 30px $dark-purple,
+      0 0 10px $dark-purple, 0 0 30px $dark-purple;
   }
   &:hover + .nav-btn-text,
   &:focus + .nav-btn-text {
     display: block;
+  }
+}
+.nav--green {
+  .nav-btn {
+    border: 4px solid $neon-green;
+    transition: border 1 ease-in;
+    box-shadow: inset 0 0 1em 0em $neon-green, 0 0 1em 0em $neon-green;
+    &:hover,
+    &:focus {
+      background-color: $neon-green;
+      box-shadow: 0 0 2px $neon-green, 0 0 4px $neon-green, 0 0 6px $neon-green,
+        0 0 20px $neon-green, 0 0 20px $neon-green, 0 0 30px $neon-green,
+        0 0 10px $neon-green, 0 0 30px $neon-green;
+    }
+  }
+}
+.nav--pink {
+  .nav-btn {
+    border: 4px solid $neon-pink;
+    transition: border 1 ease-in;
+    box-shadow: inset 0 0 1em 0em $neon-pink, 0 0 1em 0em $neon-pink;
+    &:hover,
+    &:focus {
+      background-color: $neon-pink;
+      box-shadow: 0 0 2px $neon-pink, 0 0 4px $neon-pink, 0 0 6px $neon-pink,
+        0 0 20px $neon-pink, 0 0 20px $neon-pink, 0 0 30px $neon-pink,
+        0 0 10px $neon-pink, 0 0 30px $neon-pink;
+    }
+  }
+}
+.nav--dark-purple {
+  .nav-btn {
+    border: 4px solid $dark-purple;
+    transition: border 1 ease-in;
+
+    box-shadow: inset 0 0 1em 0em $dark-purple, 0 0 1em 0em $dark-purple;
+    &:hover,
+    &:focus {
+      background-color: $dark-purple;
+      box-shadow: 0 0 2px $dark-purple, 0 0 4px $dark-purple,
+        0 0 6px $dark-purple, 0 0 20px $dark-purple, 0 0 20px $dark-purple,
+        0 0 30px $dark-purple, 0 0 10px $dark-purple, 0 0 30px $dark-purple;
+    }
+  }
+}
+.nav--light-purple {
+  .nav-btn {
+    border: 4px solid $light-purple;
+    transition: border 1 ease-in;
+
+    box-shadow: inset 0 0 1em 0em $light-purple, 0 0 1em 0em $light-purple;
+    &:hover,
+    &:focus {
+      background-color: $light-purple;
+      box-shadow: 0 0 2px $light-purple, 0 0 4px $light-purple,
+        0 0 6px $light-purple, 0 0 20px $light-purple, 0 0 20px $light-purple,
+        0 0 30px $light-purple, 0 0 10px $light-purple, 0 0 30px $light-purple;
+    }
+  }
+}
+.nav--red {
+  .nav-btn {
+    border: 4px solid $neon-red;
+    box-shadow: inset 0 0 1em 0em $neon-red, 0 0 1em 0em $neon-red;
+    &:hover,
+    &:focus {
+      background-color: $neon-red;
+      box-shadow: 0 0 2px $neon-red, 0 0 4px $neon-red, 0 0 6px $neon-red,
+        0 0 20px $neon-red, 0 0 20px $neon-red, 0 0 30px $neon-red,
+        0 0 10px $neon-red, 0 0 30px $neon-red;
+    }
   }
 }
 .nav-btn-text {

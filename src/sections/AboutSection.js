@@ -8,8 +8,15 @@ export default function AboutSection() {
         Technology has always surrounded me growing up whether it be exploring
         cool websites on my old home computer or receiving my first Nintendo
         console for my birthday. It was through my studies when I discovered the
-        expansive nature of the internet and found myself exploring web
-        development.
+        expansive nature of the internet and found myself diving into web
+        development. <br />
+        <br />
+        From the day I began exploring the amazing portfolios of others and
+        watching the process of creating a website on Youtube, the creativeness
+        and talent of other developers have sparked a newfound interest in me.
+        Ever since then I have been working hard on developing interesting and
+        creative solutions that aims to fulfil a need or solve real-world
+        issues.
       </p>
       <div className="profile-card">
         <div className="profile-content-wrapper">
@@ -38,9 +45,7 @@ export default function AboutSection() {
             <p>
               Part-time Job: <span>Academic tutor</span>
             </p>
-            <p>
-              Favourite TV-show: <span>The Haunting of Hill House</span>
-            </p>
+
             <p>
               Fun Facts:{" "}
               <span>

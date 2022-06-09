@@ -8,8 +8,6 @@ import ProjectSection from "./sections/ProjectSection";
 import SkillSection from "./sections/SkillSection";
 import ContactSection from "./sections/ContactSection";
 import Footer from "./sections/Footer";
-
-
 function App() {
   return (
     <div className="App">
