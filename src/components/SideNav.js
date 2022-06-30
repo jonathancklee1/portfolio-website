@@ -10,7 +10,7 @@ import {
 import { Link } from "react-scroll";
 export default function SideNav() {
   const [navColour, setNavColour] = React.useState("purple");
-
+  // Change nav button colour based on window scroll Y
   React.useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY < 600) {
