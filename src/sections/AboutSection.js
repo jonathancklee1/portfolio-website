@@ -24,10 +24,12 @@ export default function AboutSection() {
             <img
               src={require("../assets/img/stat-bars.png")}
               className="stat-bar-img"
+              alt="stat bar"
             ></img>
             <img
               src={require("../assets/img/pixel-me.gif")}
               className="character-img"
+              alt="character"
             ></img>
           </div>
 

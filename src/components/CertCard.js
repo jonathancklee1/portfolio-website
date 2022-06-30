@@ -11,7 +11,7 @@ export default function CertCard(props) {
       <img
         className="cert-img"
         src={require(`../assets/img/${props.certImgPath}`)}
-        alt="certification image"
+        alt="certification"
       ></img>
       <div className="cert-info">
         <h4 className="cert-name">{props.certName}</h4>

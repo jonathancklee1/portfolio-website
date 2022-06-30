@@ -21,6 +21,7 @@ export default function ProjectCard(props) {
           <img
             className="project-img"
             src={require(`../assets/img/${props.projectImgPath}`)}
+            alt="projects"
           ></img>
           <div className="project-overview">
             <div className="project-show-more-arrow"></div>
