@@ -7,7 +7,7 @@ export default function AboutSection() {
       <p className="profile-blurb">
         Technology has always surrounded me growing up whether it be exploring
         cool websites on my old home computer or receiving my first Nintendo
-        console for my birthday. It was through my studies when I discovered the
+        console for my birthday. It was through my studies that I discovered the
         expansive nature of the internet and found myself diving into web
         development. <br />
         <br />
@@ -15,7 +15,7 @@ export default function AboutSection() {
         watching the process of creating a website on Youtube, the creativeness
         and talent of other developers have sparked a newfound interest in me.
         Ever since then I have been working hard on developing interesting and
-        creative solutions that aims to fulfil a need or solve real-world
+        creative solutions that aim to fulfil a need or solve real-world
         issues.
       </p>
       <div className="profile-card">

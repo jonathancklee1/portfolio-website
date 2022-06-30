@@ -17,10 +17,18 @@ export default function HomeSection() {
           loop={Infinity}
           wrapper="h2"
         />
-        {/* <h2>Information Systems Graduate</h2> */}
         <p>Welcome to my portfolio website!</p>
       </div>
-      <button className="resume-btn">Download Resume</button>
+      <a
+        className="resume-btn"
+        href={require("../assets/documents/Jonathan-Lee-Resume.pdf")}
+        download="Jonathan-Lee-Resume"
+        // onClick="window.open('../assets/documents/Jonathan-Lee-Resume.pdf')"
+        // href="../assets/documents/Jonathan-Lee-Resume.pdf"
+        // download="Jonathan-Lee-Resume"
+      >
+        Download Resume
+      </a>
     </section>
   );
 }
