@@ -23,7 +23,7 @@ My personal portfolio which showcases my github projects that I have created dur
 This project was built using these technologies.
 
 -  [React](https://reactjs.org/)
--  [CSS3](https://sass-lang.com/)
+-  [SASS](https://sass-lang.com/)
 -  [FontAwesome](https://fontawesome.com/v5.15/icons?d=gallery&p=1) for the icons
 -  [Porkbun](https://porkbun.com/) for the domain
 -  [Netlify](https://www.netlify.com/) for hosting
