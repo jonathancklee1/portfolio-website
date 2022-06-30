@@ -1,7 +1,7 @@
 {
   "name": "portfolio-website",
   "version": "0.1.0",
-  "homepage": "www.jckl.xyz",
+  "homepage": "https://jckl.xyz",
   "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
