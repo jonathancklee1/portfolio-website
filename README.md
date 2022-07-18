@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website<br/>
-  <a href="https://jckl.xyz" target="_blank">jckl.xyz</a>
+  <a href="https://www.jckl.xyz" target="_blank">jckl.xyz</a>
 </h2>
 <p align="center">
     <img alt="React" src="https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=white"/>
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="http://jckl.xyz"><img src="./src/assets/img/portfolio-sc.png" width="700px" alt="landing page"></a>
+  <a href="http://www.jckl.xyz"><img src="./src/assets/img/portfolio-sc.png" width="700px" alt="landing page"></a>
 </p
 
 <br/>
