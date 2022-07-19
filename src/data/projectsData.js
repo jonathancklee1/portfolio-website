@@ -1,5 +1,14 @@
 const projectArray = [
   {
+    projectName: "Musicify",
+    techStack: ["React", "SCSS", "API"],
+    projectDesc:
+      "A Spotify 'extension' website with features to improve your music listening experience and broaden your music taste. Built using the React framework, this project uses the Spotify API to recommend you songs based on your selected filters, allows you to discover tracks from genres and plays songs from your personal playlists.",
+    githubLink: "https://github.com/jonathancklee1/music-player",
+    liveSiteLink: "https://jonathancklee1.github.io/music-player/",
+    projectImgPath: "musicify-sc.png",
+  },
+  {
     projectName: "MyWatchList",
     techStack: ["HTML", "CSS", "Javascript", "API"],
     projectDesc:
